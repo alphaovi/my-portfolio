@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "projectName": "CCTV Service",
+        "description": "A CCTV management site is a web-based application that is designed to manage and monitor a network of closed-circuit television (CCTV) cameras. The site provides different levels of access to different users, with the ability to restrict access to certain cameras or features.A CCTV shop website is an online store that specializes in selling CCTV equipment, including cameras, recording devices, cables, and other accessories. The website provides customers with a convenient way to browse and purchase CCTV products from the comfort of their own home or office.",
+        "image": "https://i.ibb.co/Wpz2m2r/project1.png",
+        "liveSite": "https://ablefm.netlify.app/",
+        "githubCode": "https://github.com/alphaovi/able-cctv-client"
+    },
+    {
+        "id": 2,
+        "projectName": "CCTV Service",
+        "description": "A CCTV management site is a web-based application that is designed to manage and monitor a network of closed-circuit television (CCTV) cameras. The site provides different levels of access to different users, with the ability to restrict access to certain cameras or features.A CCTV shop website is an online store that specializes in selling CCTV equipment, including cameras, recording devices, cables, and other accessories. The website provides customers with a convenient way to browse and purchase CCTV products from the comfort of their own home or office.",
+        "image": "https://i.ibb.co/Wpz2m2r/project1.png",
+        "liveSite": "https://ablefm.netlify.app/",
+        "githubCode": "https://github.com/alphaovi/able-cctv-client"
+    }
+]
