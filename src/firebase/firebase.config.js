@@ -6,19 +6,19 @@ import { initializeApp } from "firebase/app";
 // Your web app's Firebase configuration
 const firebaseConfig = {
 
-    apiKey: process.env.REACT_APP_apiKey,
-    authDomain: process.env.REACT_APP_authDomain,
-    projectId: process.env.REACT_APP_projectId,
-    storageBucket: process.env.REACT_APP_storageBucket,
-    messagingSenderId: process.env.REACT_APP_messagingSenderId,
-    appId: process.env.REACT_APP_appId,
+    // apiKey: process.env.REACT_APP_apiKey,
+    // authDomain: process.env.REACT_APP_authDomain,
+    // projectId: process.env.REACT_APP_projectId,
+    // storageBucket: process.env.REACT_APP_storageBucket,
+    // messagingSenderId: process.env.REACT_APP_messagingSenderId,
+    // appId: process.env.REACT_APP_appId,
 
-    // apiKey: "AIzaSyCxR8rnpKfm6yDEdtSlY6ieDQ9AceAW-NY",
-    // authDomain: "router-firebase-integrat-fa3d7.firebaseapp.com",
-    // projectId: "router-firebase-integrat-fa3d7",
-    // storageBucket: "router-firebase-integrat-fa3d7.appspot.com",
-    // messagingSenderId: "460291901410",
-    // appId: "1:460291901410:web:b043b4701c6c74e2f39bbb"
+    apiKey: "AIzaSyCxR8rnpKfm6yDEdtSlY6ieDQ9AceAW-NY",
+    authDomain: "router-firebase-integrat-fa3d7.firebaseapp.com",
+    projectId: "router-firebase-integrat-fa3d7",
+    storageBucket: "router-firebase-integrat-fa3d7.appspot.com",
+    messagingSenderId: "460291901410",
+    appId: "1:460291901410:web:b043b4701c6c74e2f39bbb"
 };
 
 // Initialize Firebase
