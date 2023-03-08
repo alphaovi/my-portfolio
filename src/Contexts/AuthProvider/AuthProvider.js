@@ -32,7 +32,7 @@ const AuthProvider = ({ children }) => {
     };
 
     // sign out user
-    const userSingOut = () => {
+    const userSignOut = () => {
         return signOut(auth);
     }
 
@@ -43,7 +43,7 @@ const AuthProvider = ({ children }) => {
         loading,
         createUser,
         loginUser,
-        userSingOut
+        userSignOut
     }
 
 
