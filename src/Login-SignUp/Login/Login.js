@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import loginImage from "../../assets/Login/login.svg"
 import { AuthContext } from '../../Contexts/AuthProvider/AuthProvider';
@@ -23,7 +23,7 @@ const Login = () => {
                 }
 
             })
-            .catch(error => {
+            .then(error => {
                 console.log(error);
             })
     }

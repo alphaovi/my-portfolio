@@ -6,6 +6,7 @@ import Home from "../../Pages/Home/Home/Home"
 import Projects from "../../Pages/Projects/Projects/Projects";
 import Login from "../../Login-SignUp/Login/Login";
 import SignUp from "../../Login-SignUp/SignUp/SignUp";
+import Overview from "../../Pages/Overview/Overview";
 
 
 const router = createBrowserRouter([
@@ -36,6 +37,11 @@ const router = createBrowserRouter([
             {
                 path: "/signup",
                 element: <SignUp></SignUp>
+            },
+            {
+                path: "/overview/:id",
+                element: <Overview></Overview>,
+                loader: ({params}) => fetch(`http://localhost:5000/projects/${params.id}`)
             },
         ]
 

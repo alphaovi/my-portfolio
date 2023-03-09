@@ -4,7 +4,7 @@ import Project from '../Project/Project';
 const Projects = () => {
     const [projects, setProjects] = useState([]);
     useEffect(() => {
-        fetch("projects.json")
+        fetch("http://localhost:5000/projects")
             .then(res => res.json())
             .then(result => setProjects(result))
     }, [])
@@ -12,7 +12,7 @@ const Projects = () => {
         <div>
             {
                 projects.map(project => <Project
-                    key={project.id}
+                    key={project._id}
                     project={project}
                 ></Project>)
             }
