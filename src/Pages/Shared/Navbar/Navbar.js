@@ -19,6 +19,7 @@ const Navbar = () => {
                         <li className="hover:text-white "><Link to="/project">Project</Link></li>
                         <li className="hover:text-white "><Link to="/aboutme">About Me</Link></li>
                         <li className="hover:text-white "><Link to="/contact">Contact</Link></li>
+                        <li className="hover:text-white "><Link to="/message">My Messages</Link></li>
                         {
                             user ?
                                 <button onClick={handleSignOut} className="btn">Sign Out</button>

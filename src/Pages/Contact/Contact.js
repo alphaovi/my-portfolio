@@ -12,14 +12,30 @@ const Contact = () => {
         const email = user?.email || "unregisterd";
         const message = form.message.value;
 
-        const contractor = {
+        const contractors = {
             contractorName: name,
             email,
             message
 
-        };
+        }
 
-        
+        fetch("http://localhost:5000/contacts", {
+            method: 'POST',
+            headers: {
+                "content-type": "application/json"
+            },
+            body: JSON.stringify(contractors)
+        })
+        .then(res => res.json())
+        .then(data => {
+            console.log(data);
+            if(data.acknowledged){
+                alert("You Just Successfully send your message")
+                form.reset();
+            }
+        })
+        .catch(err => console.log(err))
+
     }
 
     return (
@@ -33,13 +49,13 @@ const Contact = () => {
                                 <label className="label">
                                     <span className="label-text">First Name</span>
                                 </label>
-                                <input name="firstName" type="text" placeholder="First Name" className="input input-bordered" />
+                                <input name="firstName" type="text" placeholder="First Name" className="input input-bordered"  />
                             </div>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Last Name</span>
                                 </label>
-                                <input name="lastName" type="text" placeholder="Last Name" className="input input-bordered" />
+                                <input name="lastName" type="text" placeholder="Last Name" className="input input-bordered"  />
                             </div>
 
                             <div className="form-control">
